@@ -2,4 +2,8 @@ body{
     background-image: url("architecture-columns-dark-1874636.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    font: 500 18px/1.75 'Barlow', sans-serif;
+	color: #e0e3e6;
+	padding: 0 8px;
 }
+
