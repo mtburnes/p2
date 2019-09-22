@@ -6,4 +6,11 @@ body{
     color: #e0e3e6;
 	padding: 0 8px;
 }
+h1.center{
+    text-align: center;
+    width:100%;
+}
 
+img.size-adjust {
+    width:100%;
+}

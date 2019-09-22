@@ -13,74 +13,94 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="bootstrap-material-design.css"
+  <link rel="stylesheet" href="main.css">
+  <!--This is my CSS file.-->
+  <link rel="stylesheet" href="bootstrap-material-design.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
   <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please use<a href="https://browsehappy.com/"> literally any modern browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <header>
-
-  </header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="https://mtburnes.dev/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <a class="navbar-brand" href="https://mtburnes.dev/">mtburnes.dev</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://mtburnes.dev/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://mtburnes.dev/p2/contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://mtburnes.dev/p2/calculator.html">Calculator</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <main class="container">
-      <div class="row">
-        
-        <article>
-            <header>
-                <h1>Background</h1>
-                <p>
-                    I am a Computer Science student based in South City St. Louis, Missouri.
-                    I have a passion for all things computers, IT, and networking. 
-                    Solving strange problems and creating cool services is what makes me tick. 
-                    I am a programmer, musician, team-player, and occasional athlete.
-                </p>
-                <aside>
-                    This is a cool place for me to put my links to plug my stuff and cool sites.
-            </aside>    
-                <p>I've been the "computer guy" for as long as I can remember.</p>    
-                
-                <p>I've been tought music since I could talk, and I began playing music during my sophomore year at Bishop DuBourg High School, and joined the Jazz band senior year. I got involved with the IT department, where I got my first taste of Windows Server and Active Directory management.</p>
-            </header>
-        </article>
-        <article>
+    <div class="row">
+      <article class="col-sm-8">
+        <div class="row">
+          <h1 class="center">Background</h1>
+          <p>
+            I am a Computer Science student based in South City St. Louis, Missouri.
+            I have a passion for all things computers, IT, and networking.
+            Solving strange problems and creating cool services is what makes me tick.
+            I am a programmer, musician, team-player, and occasional athlete.
+          </p>
+          <p>
+            I've been the "computer guy" for as long as I can remember.
+          </p>
 
-        </article>
-        <article>
+        </div>
+        <div class="row">
+          <h1 class="center">Fun Tidbits</h1>
+          <p>
+            I am a musician. I started out playing piano in grade school, 
+            but quit lessons after two-ish years. In high school, I picked up guitar. 
+            I played guitar in my High School Jazz Band, as well as playing in the pit in different
+            plays and musicals. 
+            I come from a big family of musicians, primarily my dad's side of the family. Everyone 
+            either can sing or play an instrument.
+          </p>
+        </div>
+      </article>
+    <aside class="col-sm-4">
+      <article class="row">
+        <img class="rounded-circle size-adjust" src="profile.jpg"> 
+        <h1 class="center">Links</h1>
+          <p>
 
-        </article>
-      </div>
-      
+          </p>
+      </article>
+    </aside>
+    </div>
   </main>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+<!--Sources:
+https://getbootstrap.com/docs/4.3/examples/starter-template/
+
+-->
