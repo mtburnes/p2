@@ -40,3 +40,8 @@ div.undervid{
 table, th, td{
     border: 1px solid #e0e3e6;
 }
+
+footer{
+    font-size: 0.6em;
+    text-align: right;
+}
