@@ -36,3 +36,7 @@ video.size-adjust {
 div.undervid{
     font: 500 15px/1.75 'Barlow', sans-serif;
 }
+
+table, th, td{
+    border: 1px solid #e0e3e6;
+}
