@@ -1,3 +1,15 @@
+try{ //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
+    document.getElementById("a2").value = window.localStorage.getItem(a2LastSession);
+    document.getElementById("b2").value = window.localStorage.getItem(b2LastSession);
+    document.getElementById("c2").value = window.localStorage.getItem(c2LastSession);
+}
+catch(error){
+    console.log(error);
+    // console.log("There is no local storage values stored. Creating dummy values.");
+    // window.localStorage.setItem('a2LastSession', "");
+    // window.localStorage.setItem('b2LastSession', "");
+    // window.localStorage.setItem('c2LastSession', "");
+}
 function displayResult(number, missingValue) {
     getElementById("missing-value").value = `${missingValue}^2 = ${number}`
 };
@@ -26,6 +38,9 @@ document.getElementById("solve-button").addEventListener("click", function () {
     else{
         document.getElementById("missing-value").value = "You need to fill in at least two values.";
     }
+    window.localStorage.setItem('a2LastSession', document.getElementById("a2").value);
+    window.localStorage.setItem('b2LastSession', document.getElementById("b2").value);
+    window.localStorage.setItem('c2LastSession', document.getElementById("c2").value);
 });
 
 document.getElementById("get-weather").addEventListener("click", function(){
