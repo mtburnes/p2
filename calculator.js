@@ -1,7 +1,10 @@
  //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
-document.getElementById("a2").value = window.localStorage.getItem(a2LastSession);
-document.getElementById("b2").value = window.localStorage.getItem(b2LastSession);
-document.getElementById("c2").value = window.localStorage.getItem(c2LastSession);
+document.onload(function(){
+    document.getElementById("a2").value = window.localStorage.getItem(a2LastSession);
+    document.getElementById("b2").value = window.localStorage.getItem(b2LastSession);
+    document.getElementById("c2").value = window.localStorage.getItem(c2LastSession);
+})
+
 function displayResult(number, missingValue) {
     getElementById("missing-value").value = `${missingValue}^2 = ${number}`
 };
