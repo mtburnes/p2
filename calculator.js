@@ -1,10 +1,3 @@
- //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
-document.onload(function(){
-    document.getElementById("a2").value = window.localStorage.getItem(a2LastSession);
-    document.getElementById("b2").value = window.localStorage.getItem(b2LastSession);
-    document.getElementById("c2").value = window.localStorage.getItem(c2LastSession);
-})
-
 function displayResult(number, missingValue) {
     getElementById("missing-value").value = `${missingValue}^2 = ${number}`
 };
@@ -37,6 +30,12 @@ document.getElementById("solve-button").addEventListener("click", function () {
     window.localStorage.setItem('b2LastSession', document.getElementById("b2").value);
     window.localStorage.setItem('c2LastSession', document.getElementById("c2").value);
 });
+
+document.getElementById("restore-last").addEventListener("click", function(){
+    document.getElementById("a2").value = window.localStorage.getItem(a2LastSession);
+    document.getElementById("b2").value = window.localStorage.getItem(b2LastSession);
+    document.getElementById("c2").value = window.localStorage.getItem(c2LastSession);
+})
 
 document.getElementById("get-weather").addEventListener("click", function(){
     var response = $.getJSON(
