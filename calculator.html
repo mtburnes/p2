@@ -14,7 +14,8 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="main.css"><!--This is my CSS file.-->
+    <link rel="stylesheet" href="main.css">
+    <!--This is my CSS file.-->
     <link rel="stylesheet" href="bootstrap-material-design.css">
 
     <meta name="theme-color" content="#fafafa">
@@ -31,7 +32,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://mtburnes.dev/p2/index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://mtburnes.dev/p2/index.html">Home <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://mtburnes.dev/p2/contact.html">Contact</a>
@@ -52,39 +54,55 @@
             <form>
                 <p>
                     A<sup>2</sup><br>
-                    <input type="number" name="a2">
+                    <input type="number" id="a2">
                 </p>
                 <p>
                     B<sup>2</sup><br>
-                    <input type="number" name="b2">
+                    <input type="number" id="b2">
                 </p>
                 <p>
                     C<sup>2</sup><br>
-                    <input type="number" name="c2">
+                    <input type="number" id="c2">
                 </p>
                 <p>
-                    <button>Solve</button>
+                    <output style="color:red; font:bold" id="missing-value"></output>
+                </p>
+                <p>
+                    <button type="button" id="solve-button">Solve</button> <button type="button"
+                        id="clear">Clear</button>
                 </p>
             </form>
+        </div>
+        <div>
+            <h2 class="center">Weatherman API</h2>
+            <p>Press the button to make a call to the Weatherman API.</p>
+            <p><button type="button" id="get-weather">Weather</button></p>
+            <p>Weather Condition: <output style="font:italic" id="current-condition"></output></p>
+            <p>Current Temperature:<output style="font:italic" id="current-temperature"></output></p>
+            <p>Today's High:<output style="font:italic" id="high-temperature"></output></p>
+            <p>Today's Low:<output style="font:italic" id="low-temperature"></output></p>
         </div>
         <footer>
             © 2019 Michael Burnes.
             <br>
-            Background supplied by <a href="https://www.pexels.com/photo/gray-concrete-building-1874636/">Anthony Macajone.</a>
+            Background supplied by <a href="https://www.pexels.com/photo/gray-concrete-building-1874636/">Anthony
+                Macajone.</a>
             <br>
             Image is royalty free.
         </footer>
     </main>
 
-<script src="js/vendor/modernizr-3.7.1.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+
+    <script src="calculator.js"></script>
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
