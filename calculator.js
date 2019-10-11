@@ -32,9 +32,9 @@ document.getElementById("solve-button").addEventListener("click", function () {
 });
 
 document.getElementById("restore-last").addEventListener("click", function(){
-    document.getElementById("a2").value = window.localStorage.getItem(a2LastSession);
-    document.getElementById("b2").value = window.localStorage.getItem(b2LastSession);
-    document.getElementById("c2").value = window.localStorage.getItem(c2LastSession);
+    document.getElementById("a2").value = window.localStorage.getItem("a2LastSession");
+    document.getElementById("b2").value = window.localStorage.getItem("b2LastSession");
+    document.getElementById("c2").value = window.localStorage.getItem("c2LastSession");
 })
 
 document.getElementById("get-weather").addEventListener("click", function(){
