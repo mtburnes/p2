@@ -30,5 +30,8 @@ document.getElementById("solve-button").addEventListener("click", function () {
 
 document.getElementById("get-weather").addEventListener("click", function(){
     var response = $.getJSON('https://api.weatherman.cadmium.dev/v1/forecast/40.3589785/-94.883186?lang=en&units=auto&bearer=adb52794b27f8fc004250e83c6562e26cf4bf270');
-    document.getElementById("current-condition") = $.parseJSON;
+    document.getElementById("current-condition").value = response.responseJSON.currentCondition;
+    document.getElementById("current-temperature").value = response.responseJSON.currentTemperature;
+    document.getElementById("high-temperature").value = response.responseJSON.currentHigh;
+    document.getElementById("low-temperature").value = response.responseJSON.currentLow;
 })
