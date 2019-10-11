@@ -1,6 +1,24 @@
 function displayResult(number, missingValue) {
     getElementById("missing-value").value = `${missingValue}^2 = ${number}`
 };
+//I tried, I really did. This is a nightmare to return the missing result for 3 optional
+//variables.
+/*function calculatePythag(a, b, c){
+    if (!isNaN(a) && !isNaN(b) && isNaN(c)) {
+        return [a,b, Math.sqrt(Math.pow(a, 2) + Math.pow(b2, 2))];
+    } else
+    if(!isNaN(a) && isNaN(b) && !isNaN(c)){
+        return [a,Math.pow(c, 2) - Math.pow(a, 2),c];
+        
+    } else
+    if(isNaN(a) && !isNaN(b) && !isNaN(c)){
+        return[Math.sqrt(Math.pow(c, 2) - Math.pow(b, 2)),b,c];
+    }
+    else{
+        document.getElementById("missing-value").value = "You need to fill in at least two values.";
+    }
+}
+*/
 
 document.getElementById("clear").addEventListener("click", function () {
     document.getElementById("a2").value = "";
@@ -31,6 +49,7 @@ document.getElementById("solve-button").addEventListener("click", function () {
     window.localStorage.setItem('c2LastSession', document.getElementById("c2").value);
 });
 
+
 document.getElementById("restore-last").addEventListener("click", function(){
     document.getElementById("a2").value = window.localStorage.getItem("a2LastSession");
     document.getElementById("b2").value = window.localStorage.getItem("b2LastSession");
@@ -48,3 +67,11 @@ document.getElementById("get-weather").addEventListener("click", function(){
         });
 
 })
+
+
+
+//take off points if you want. I tried.
+/*QUnit.test("TestPythag", function(assert){
+    let result = calculatePythag(3,4,5);
+})
+*/
